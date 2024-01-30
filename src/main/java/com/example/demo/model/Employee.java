@@ -19,7 +19,7 @@ public class Employee {
 	private String empName;
 
 	@Column(name = "esal")
-	private Double emSal;
+	private Double empSal;
 
 	@Column(name = "edept")
 	private String empDept;
@@ -34,7 +34,7 @@ public class Employee {
 		super();
 		this.empId = empId;
 		this.empName = empName;
-		this.emSal = emSal;
+		this.empSal = emSal;
 		this.empDept = empDept;
 		this.empHra = empHra;
 		this.empTa = empTa;
@@ -44,7 +44,7 @@ public class Employee {
 		super();
 
 		this.empName = empName;
-		this.emSal = emSal;
+		this.empSal = emSal;
 		this.empDept = empDept;
 		this.empHra = empHra;
 		this.empTa = empTa;
@@ -70,12 +70,12 @@ public class Employee {
 		this.empName = empName;
 	}
 
-	public Double getEmSal() {
-		return emSal;
+	public Double getEmpSal() {
+		return empSal;
 	}
 
 	public void setEmSal(Double emSal) {
-		this.emSal = emSal;
+		this.empSal = emSal;
 	}
 
 	public String getEmpDept() {
@@ -104,7 +104,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", emSal=" + emSal + ", empDept=" + empDept
+		return "Employee [empId=" + empId + ", empName=" + empName + ", emSal=" + empSal + ", empDept=" + empDept
 				+ ", empHra=" + empHra + ", empTa=" + empTa + "]";
 	}
 
